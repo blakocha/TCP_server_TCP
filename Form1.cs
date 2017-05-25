@@ -47,8 +47,8 @@ namespace TCP_server_TCP
                 serwer = new TcpListener(adresIP, port);
                 serwer.Start();
                 klient = serwer.AcceptTcpClient();
-
-                info_o_polaczeniu.Items.Add("Nawiązano połączenie. ");
+                IPEndPoint IP = (IPEndPoint)klient.Client.RemoteEndPoint; 
+                info_o_polaczeniu.Items.Add("[ " + IP.ToString() + "] : Nawiązano połączenie. ");
 
                 Button_Start.Enabled = false;
                 Button_Stop.Enabled = true;
