@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Sockets;
+using System.Net; 
 
 namespace TCP_server_TCP
 {
@@ -15,6 +17,11 @@ namespace TCP_server_TCP
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Button_Start_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
