@@ -55,8 +55,6 @@ namespace TCP_server_TCP
                 klient.Close();
                 serwer.Stop();
 
-                klient = serwer.AcceptTcpClient();
-
             }
 
             catch (Exception ex)

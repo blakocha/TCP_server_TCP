@@ -42,7 +42,7 @@
             this.Adres.Name = "Adres";
             this.Adres.Size = new System.Drawing.Size(272, 20);
             this.Adres.TabIndex = 0;
-            this.Adres.Text = "Adres";
+            this.Adres.Text = "127.0.0.1";
             // 
             // PortNumber
             // 
@@ -55,6 +55,11 @@
             this.PortNumber.Name = "PortNumber";
             this.PortNumber.Size = new System.Drawing.Size(272, 20);
             this.PortNumber.TabIndex = 1;
+            this.PortNumber.Value = new decimal(new int[] {
+            30000,
+            0,
+            0,
+            0});
             // 
             // info_o_polaczeniu
             // 
@@ -76,6 +81,7 @@
             // 
             // Button_Stop
             // 
+            this.Button_Stop.Enabled = false;
             this.Button_Stop.Location = new System.Drawing.Point(417, 261);
             this.Button_Stop.Name = "Button_Stop";
             this.Button_Stop.Size = new System.Drawing.Size(157, 45);
